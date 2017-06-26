@@ -72,7 +72,7 @@ c.NotebookApp.ip = '*'
 # Python modules to load as notebook server extensions. This is an experimental
 # API, and may change in future releases.
 # c.NotebookApp.server_extensions = ['nbextensions']
-c.NotebookApp.nbserver_extensions = ['nbextensions']
+c.NotebookApp.nbserver_extensions = {'jupyter_nbextensions_configurator': True}
 
 # The random bytes used to secure cookies. By default this is a new random
 # number every time you start the Notebook. Set it to a value in a config file
