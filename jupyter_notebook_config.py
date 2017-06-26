@@ -67,11 +67,11 @@
 c.NotebookApp.ip = '*'
 
 # DEPRECATED use base_url
-c.NotebookApp.base_project_url = '/c10db88cf2f88eb24/'
+# c.NotebookApp.base_project_url = '/c10db88cf2f88eb24/'
 
 # Python modules to load as notebook server extensions. This is an experimental
 # API, and may change in future releases.
-# c.NotebookApp.server_extensions = traitlets.Undefined
+c.NotebookApp.server_extensions = ['nbextensions']
 
 # The random bytes used to secure cookies. By default this is a new random
 # number every time you start the Notebook. Set it to a value in a config file
@@ -124,7 +124,7 @@ c.NotebookApp.port = 6789
 # The base URL for the notebook server.
 #
 # Leading and trailing slashes can be omitted, and will automatically be added.
-# c.NotebookApp.base_url = '/'
+c.NotebookApp.base_url = '/c10db88cf2f88eb24/'
 
 # The session manager class to use.
 # c.NotebookApp.session_manager_class = <class 'notebook.services.sessions.sessionmanager.SessionManager'>
